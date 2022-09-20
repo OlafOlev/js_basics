@@ -1,55 +1,47 @@
-console.log("Hello World!")
-//string
-let name = "Olaf Olev Alakivi"
-console.log(name)
-console.log(typeof name)
+let val
 
-let goodMark = 5
-console.log(goodMark)
-console.log(typeof goodMark)
+//number -> String
 
-let percent = 50.3
-console.log(percent)
-console.log(typeof percent)
+val = String(9000)
+val = String(4+4)
+val = String(5.8)
 
-let isHere = true//false
-console.log(isHere)
-console.log(typeof isHere)
+//boolean -> String
+val = String(true)
+val = String(false)
 
-//object
-const person = {
-    firstname: "Olaf Olev",
-    surname:"Alakivi"
-}
-console.log(person)
-console.log(typeof person)
-console.log(person)
-console.log(person.firstname)
-console.log(person.surname)
-person.department = "ITA21"
-console.log(person)
+//object -> String
+val = String(new Date())
 
-//null
-const airplane = null
-console.log(airplane)
-console.log(typeof airplane)
+//Null -> String
+val = String(null)
 
-//Symbol
-const symbol = Symbol()
-console.log(symbol)
-console.log(typeof symbol)
+// Array -> String
+val = String([1, 2, 3, 4, 5])
 
-//undefined
-let test
-console.log(test)
-console.log(typeof test)
+//Underfined -> String
+val = String(undefined)
 
+//toString()
+val = (true).toString()
 
-// //const
-// const surname = "Alakivi"
-//
-// // arrays
-// const numbers = [1, 2, 3, 4, 5]
-// console.log(numbers)
-// numbers.push(6)
-// console.log(numbers)
+//String -> Number
+val = Number("5")
+
+//Boolean -> Number
+val = Number(true)
+val = Number(false)
+
+//Null -> Number
+val = Number(null)
+
+//String -> Number
+val = Number("test")
+
+//Array -> Number
+val = Number([1, 2, 3])
+//String -> Integer
+val = parseInt("100,.3")
+// String -> Float
+val = parseFloat("100.30")
+console.log(val)

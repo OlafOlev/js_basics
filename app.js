@@ -1,47 +1,21 @@
-let val
+const num1 = 50
+const num2 = 100
 
-//number -> String
+let result
 
-val = String(9000)
-val = String(4+4)
-val = String(5.8)
+result = num1 + num2
+result = num1 - num2
+result = num1 * num2
+result = num1 / num2
+result = num1 % num2
 
-//boolean -> String
-val = String(true)
-val = String(false)
+result = Math.pi
+result = Math.round(2.5)
+result = Math.ceil(2.3)
+result = Math.floor(2.7)
+result = Math.sqrt(64)
+result = Math.abs(-3)
+result = Math.pow(8, 2)
 
-//object -> String
-val = String(new Date())
-
-//Null -> String
-val = String(null)
-
-// Array -> String
-val = String([1, 2, 3, 4, 5])
-
-//Underfined -> String
-val = String(undefined)
-
-//toString()
-val = (true).toString()
-
-//String -> Number
-val = Number("5")
-
-//Boolean -> Number
-val = Number(true)
-val = Number(false)
-
-//Null -> Number
-val = Number(null)
-
-//String -> Number
-val = Number("test")
-
-//Array -> Number
-val = Number([1, 2, 3])
-//String -> Integer
-val = parseInt("100,.3")
-// String -> Float
-val = parseFloat("100.30")
-console.log(val)
+result = Math.floor(Math.random() * 11)
+console.log(result)

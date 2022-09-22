@@ -1,24 +1,34 @@
-const numbers1 = [69, 9000, 420, 666, 1]
-const numbers2 = new Array(9000, 420, 666, 1)
+const person = {
+    firstname: 'Kadi',
+    surname: 'Tamm',
+    age: 40,
+    email:'kadi.tamm@gmail.com',
+    hobbies: ['tennis', 'korvpall'],
+    address: {
+        city:'võru',
+        county:'Võrumaa'
+    },
+    getBirthYear: function (){
+        return 2022 - this.age
+    }
+}
 
 let val
+val = person
+val = person.firstname
+val = person['surname']
+val = person['hobbies'][1]
+val = person.address.city
+val = person.address['city']
+val = person.getBirthYear()
 
-val = numbers1.length
-val = numbers2.length
+// for(let i = 0; i< person.hobbies.length; i++){
+//     console.log(person.hobbies[i])
+//     console.log(i)
+// }
 
-val = numbers1[1]
-val = numbers1.indexOf(666)
-
-val = Array.isArray(val)
-
-numbers1.push(123)
-numbers1.unshift(100)
-numbers1.shift()
-val = numbers1.concat(numbers2)
-
-
-console.log(numbers1)
-numbers1.sort(function (x,y) {
-    return y - x
+person.hobbies.forEach((hobbie, index) => {
+    console.log(hobbie + " on element indeksiga " + index)
 })
-console.log(numbers1)
+
+console.log(val)

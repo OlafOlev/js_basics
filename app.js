@@ -1,34 +1,33 @@
-// function greeting(name){
-//     return `Hello, ${name}`
-// }
-//
-// // greeting('Olaf')
-// // let greet = greeting('olaf')
-// // console.log(greet)
-//
-// const square = function(number) {
-//     return number * number
-// }
-//
-// let result = square(3)
-// console.log(result)
-(function(){
-    console.log(`function is running`)
-})();
+let val;
 
-(function(name){
-    console.log(`Hello, ${name}!`)
-})(`olaf`)
+val = document
+val = document.all[6]
+val = document.all.length
 
-const todo = {
-    add: function (){
-        console.log(`add todo...`)
-    },
-    edit: function (){
-        console.log(`edit todo....`)
-    },
-    delete: function (){
-        console.log(`delete todo....`)
-    },
+val= document.head
+val = document.body
 
-}
+val = document.doctype
+val = document.domain
+val = document.URL
+val = document.characterSet
+val = document.contentType
+
+val = document.forms
+val = document.forms[0]
+val = document.forms[0].method
+val = document.forms[0].action
+val = document.forms[0].id
+
+val = document.links
+val = document.links[0]
+val = document.links[0].id
+val = document.links[0].className
+val = document.links[0].classList
+val = document.links[0].classList[2]
+
+val = document.scripts
+val = document.scripts[0]
+val = document.scripts[1]
+val = document.scripts[1].getAttribute("src")
+console.log(val)

@@ -1,37 +1,30 @@
 let val;
-//
-// val = document.getElementById('task-form')
-// val = document.getElementById('task-form').id
-// val = document.getElementById('task-form').className
-const taskTitle = document.getElementById("task-title")
 
-// style
-taskTitle.style.background = '#333'
-taskTitle.style.color = '#fff'
-taskTitle.style.padding = '15px'
-// taskTitle.style.display = 'none'
+const list = document.querySelector('ul')
+const listItem = document.querySelector('li')
 
-// content
-taskTitle.textContent = 'Define Tasks'
-taskTitle.innerText = 'My Favorite Tasks'
-taskTitle.innerHTML = '<b style="color:red">My Tasks</b>'
-
-val = document.querySelector('ul')
-val = document.querySelector('li')
+val = list
+val = list.childNodes
+val = list.childNodes[1]
+val = list.childNodes[1].nodeName
+val = list.childNodes[1].nodeType
 
 
-// const task = document.querySelector('li')
-// task.style.color = 'green'
+val = list.children
+val = list.children[1].children
 
-// val = document.querySelector('li:last-child')
-// document.querySelector('li:nth-child(1)').style.background = "#ccc"
-// document.querySelector('li:nth-child(2)').style.background = "#f4f4f4"
+val = list.firstChild
+val = list.firstElementChild
 
-val = document.querySelectorAll("li")
-val = document.querySelectorAll("li:nth-child(odd)")
-oddli = document.querySelectorAll("li:nth-child(odd)")
+val = list.lastChild
+val = list.lastElementChild
 
-oddli.forEach((li)=> {
-    li.style.background = '#ddd'
-})
+val = list.childElementCount
+
+val = listItem.parentNode
+val = listItem.parentElement
+val = listItem.parentElement.parentElement
+
+val = listItem.nextSibling
+val = listItem.nextElementSibling
 console.log(val)
